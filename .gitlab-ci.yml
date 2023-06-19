@@ -90,4 +90,4 @@ DeployFirebase:
     - apt-get update && apt-get install -y sudo
     - curl -sL https://firebase.tools | bash
   script:
-    - firebase appdistribution:distribute app/build/outputs/apk/**/*.apk --app $FIREBASE_APP_ID --token $FIREBASE_TOKEN --groups indatacore --release-notes "$CI_COMMIT_AUTHOR.$CI_COMMIT_MESSAGE"
+    - firebase appdistribution:distribute app/build/outputs/apk/**/*.apk --app $FIREBASE_APP_ID --token $FIREBASE_TOKEN --groups testeurs --release-notes "$CI_COMMIT_AUTHOR.$CI_COMMIT_MESSAGE"
